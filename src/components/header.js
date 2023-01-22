@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import * as styles from './navigation.module.css'
 
-const Navigation = () => (
+const Header = () => (
   <nav role="navigation" className={styles.container} aria-label="Main">
     <Link to="/" className={styles.logoLink}>
       <span className={styles.logo} />
@@ -24,4 +24,4 @@ const Navigation = () => (
   </nav>
 )
 
-export default Navigation
+export default Header

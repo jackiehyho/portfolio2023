@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import './variables.css'
 import './global.css'
 import Seo from './seo'
-import Header from './navigation'
+import Header from './header'
 import Footer from './footer'
 import { device } from './devices'
 
