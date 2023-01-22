@@ -8,7 +8,7 @@ import Footer from './footer'
 import { device } from './devices'
 
 
-const StyledLayout = styled.section`
+const StyledLayout = styled.div`
 max-width: var(--layout-width-min);
 @media ${device.laptop} {
   margin: 0 auto;
