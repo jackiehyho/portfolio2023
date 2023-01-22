@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import './variables.css'
 import './global.css'
 import Seo from './seo'
-import Navigation from './navigation'
+import Header from './navigation'
 import Footer from './footer'
 import { device } from './devices'
 
@@ -23,7 +23,7 @@ class Template extends React.Component {
     return (
       <StyledLayout>
         <Seo />
-        <Navigation />
+        <Header />
         <main>{children}</main>
         <Footer />
       </StyledLayout>
