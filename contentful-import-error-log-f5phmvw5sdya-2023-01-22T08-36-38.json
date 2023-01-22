@@ -1,0 +1,33 @@
+[
+  {
+    "ts": "2023-01-22T16:36:38.813Z",
+    "level": "error",
+    "error": {
+      "originalError": {
+        "name": "AccessTokenInvalid",
+        "message": "{\n  \"status\": 401,\n  \"statusText\": \"Unauthorized\",\n  \"message\": \"The access token you sent could not be found or is invalid.\",\n  \"details\": {},\n  \"request\": {\n    \"url\": \"/spaces/f5phmvw5sdya\",\n    \"headers\": {\n      \"Accept\": \"application/json, text/plain, */*\",\n      \"Content-Type\": \"application/vnd.contentful.management.v1+json\",\n      \"X-Contentful-User-Agent\": \"app contentful.import/8.5.22; feature library-import; sdk contentful-management.js/10.27.0; platform node.js/v18.13.0; os Windows/v18.13.0;\",\n      \"CF-Sequence\": \"3f4b96f7-9deb-476d-b44d-16f8cbe564d4\",\n      \"Authorization\": \"Bearer ...MyqaK\",\n      \"user-agent\": \"node.js/v18.13.0\",\n      \"Accept-Encoding\": \"gzip\"\n    },\n    \"method\": \"get\"\n  },\n  \"requestId\": \"ffbd6221-4135-4962-8765-e9737cec9c17\"\n}"
+      },
+      "data": {
+        "status": 401,
+        "statusText": "Unauthorized",
+        "message": "The access token you sent could not be found or is invalid.",
+        "details": {
+        },
+        "request": {
+          "url": "/spaces/f5phmvw5sdya",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/8.5.22; feature library-import; sdk contentful-management.js/10.27.0; platform node.js/v18.13.0; os Windows/v18.13.0;",
+            "CF-Sequence": "3f4b96f7-9deb-476d-b44d-16f8cbe564d4",
+            "Authorization": "Bearer ...MyqaK",
+            "user-agent": "node.js/v18.13.0",
+            "Accept-Encoding": "gzip"
+          },
+          "method": "get"
+        },
+        "requestId": "ffbd6221-4135-4962-8765-e9737cec9c17"
+      }
+    }
+  }
+]
