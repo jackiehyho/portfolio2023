@@ -5,12 +5,15 @@ import './global.css'
 import Seo from './seo'
 import Navigation from './navigation'
 import Footer from './footer'
-import ScreenSizes from './media-variables'
+import { device } from './devices'
 
-const StyledMain = styled.main`
+
+const StyledLayout = styled.section`
 max-width: var(--layout-width-min);
-@media (${ScreenSizes.mobile}) {
+@media ${device.laptop} {
   margin: 0 auto;
+  max-width: var(--layout-width-max);
+
 }
 `
 class Template extends React.Component {
@@ -18,12 +21,12 @@ class Template extends React.Component {
     const { children } = this.props
 
     return (
-      <>
+      <StyledLayout>
         <Seo />
         <Navigation />
-        <StyledMain>{children}</StyledMain>
+        <main>{children}</main>
         <Footer />
-      </>
+      </StyledLayout>
     )
   }
 }

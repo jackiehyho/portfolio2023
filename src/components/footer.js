@@ -1,16 +1,21 @@
 import React from 'react'
+import Styled from 'styled-components'
 
-import Container from './container'
-import * as styles from './footer.module.css'
 
+
+
+const FooterContainer = Styled.footer`
+
+`
+
+const FooterCopyright = Styled.h3`
+
+
+`
 const Footer = () => (
-  <Container as="footer">
-    <div className={styles.container}>
-      Built with <a href="https://contentful.com/">Contentful</a> and{' '}
-      <a href="https://gatsbyjs.com">Gatsby</a> &middot;{' '}
-      <a href="https://github.com/contentful/starter-gatsby-blog">Source</a>
-    </div>
-  </Container>
+  <FooterContainer>
+  <FooterCopyright>Text</FooterCopyright>
+  </FooterContainer>
 )
 
 export default Footer
