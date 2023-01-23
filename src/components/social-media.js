@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import LinkedInImage from '../assets/linkedin.svg'
 import InstagramImage from '../assets/instagram.svg'
 import FacebookImage from '../assets/facebook.svg'
-import TwitterImage from '../assets/twitter.svg'
-import YouTubeImage from '../assets/youtube.svg'
+// import TwitterImage from '../assets/twitter.svg'
+// import YouTubeImage from '../assets/youtube.svg'
 
 
 const StyledSocialContainer = styled.section`
