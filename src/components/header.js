@@ -1,27 +1,40 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Styled from 'styled-components'
 
-import * as styles from './navigation.module.css'
+const StyledHeader = Styled.header`
+display: flex;
+justify-content: center;
+max-width: var(--layout-min-width);
+align-items: center;
+padding:1rem;
+`
+
+const StyledLogoLink = Styled(Link)`
+display: flex;
+font-weight: var(--medium);
+align-items: center;
+flex-direction: row;
+flex-shrink: 0;
+gap: var(--space-md);
+`
+
+const StyledLogoImage= Styled.img`
+height: var(--size-logo);
+width: var(--size-logo);
+display: block;
+`
+
+
 
 const Header = () => (
-  <nav role="navigation" className={styles.container} aria-label="Main">
-    <Link to="/" className={styles.logoLink}>
-      <span className={styles.logo} />
-      <span className={styles.navigationItem}>Jackie Ho's Portfolio</span>
-    </Link>
-    <ul className={styles.navigation}>
-      <li className={styles.navigationItem}>
-        <Link to="/" activeClassName="active">
-          Home
-        </Link>
-      </li>
-      <li className={styles.navigationItem}>
-        <Link to="/blog/" activeClassName="active">
-          Blog
-        </Link>
-      </li>
-    </ul>
-  </nav>
+  <StyledHeader aria-label="Main">
+    <StyledLogoLink to="/">
+      <StyledLogoImage src="https://via.placeholder.com/32x32" />
+      {/* <span className={styles.navigationItem}>Jackie Ho's Portfolio</span> */}
+    </StyledLogoLink>
+   
+  </StyledHeader>
 )
 
 export default Header
